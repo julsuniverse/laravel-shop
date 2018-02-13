@@ -19,8 +19,7 @@ class CreateProductsTable extends Migration
             $table->double('price');
             $table->string('alias', 255);
             $table->string('photo', 255);
-            $table->integer('shop_id');
-            $table->integer('category_id');
+            $table->unsignedInteger('category_id');
             $table->timestamps();
         });
     }
